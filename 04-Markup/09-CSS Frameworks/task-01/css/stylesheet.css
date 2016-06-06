@@ -1,0 +1,23 @@
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.icon_heart {
+    width: 61px;
+    height: 53px;
+    background-position: -5px -5px;
+}
+
+.icon_lamp {
+    width: 46px;
+    height: 65px;
+    background-position: -76px -5px;
+}
+
+.icon_star {
+    width: 56px;
+    height: 53px;
+    background-position: -5px -80px;
+}

@@ -1,0 +1,27 @@
+body {
+    background-color: #EEEBE5;
+}
+
+.wrapper {
+    width: 700px;
+    padding: 3em 0;
+    margin: 0 auto;
+}
+
+.control {
+    margin: 0;
+}
+
+.psw-strength {
+    display: none;
+    height: 5px;
+    margin-top: 5px;
+}
+
+.ink-form .control .valid {
+    border: 1.5px solid #3f8514;
+}
+
+.ink-form .control .error {
+    border: 1.5px solid #b10f0f;
+}

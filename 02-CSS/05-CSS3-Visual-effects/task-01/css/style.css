@@ -1,0 +1,23 @@
+.newspaper {
+  -webkit-column-width: 33.333%;
+     -moz-column-width: 33.333%;
+          column-width: 33.333%;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+  -webkit-column-rule: 4px solid #c4c8cc;
+     -moz-column-rule: 4px solid #c4c8cc;
+          column-rule: 4px solid #c4c8cc;
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  text-align: justify;
+}
+
+::-moz-selection { 
+  background: #f00;
+}
+
+::selection {
+  background: #f00;
+}

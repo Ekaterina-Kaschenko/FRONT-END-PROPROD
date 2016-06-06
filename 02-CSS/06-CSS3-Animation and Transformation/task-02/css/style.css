@@ -1,0 +1,62 @@
+.ease {
+	-webkit-transition: width 2s ease,
+							background-color 2s ease;
+	transition: width 2s ease,
+							background-color 2s ease;
+}
+
+.linear {
+	-webkit-transition: width 2s linear,
+							background-color 2s linear;
+	transition: width 2s linear,
+							background-color 2s linear;
+}
+
+.easein {
+	-webkit-transition: width 2s ease-in,
+							background-color 2s ease-in;
+	transition: width 2s ease-in,
+							background-color 2s ease-in;
+}
+
+.easeout {
+	-webkit-transition: width 2s ease-out,
+							background-color 2s ease-out;
+	transition: width 2s ease-out,
+							background-color 2s ease-out;
+}
+
+.easeinout {
+	-webkit-transition: width 2s ease-in-out,
+							background-color 2s ease-in-out;
+	transition: width 2s ease-in-out,
+							background-color 2s ease-in-out;
+}
+
+.panel-body:hover .ease,
+.panel-body:hover .linear,
+.panel-body:hover .easein,
+.panel-body:hover .easeout,
+.panel-body:hover .easeinout {
+	width: 100%;
+}
+
+.panel-body:hover .ease {
+	background-color: #bd4a25;
+}
+
+.panel-body:hover .linear {
+	background-color: #98743a;
+}
+
+.panel-body:hover .easein {
+	background-color: #7c954a;
+}
+
+.panel-body:hover .easeout {
+	background-color: #ae5b2d;
+}
+
+.panel-body:hover .easeinout {
+	background-color: #858a44;
+}

@@ -1,0 +1,83 @@
+.anim-container{
+  position: relative;
+  overflow: hidden;
+  height:550px;
+}
+.anim-img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin:-300px 0 0 -300px;
+}
+.logo-picture{
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin:-50px 0 0 -50px;
+  z-index:1;
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+/* Your code */
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes scale {
+  from {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  to {
+    -webkit-transform: scale(2.0);
+            transform: scale(2.0);
+  }
+}
+
+@keyframes scale {
+  from {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  to {
+    -webkit-transform: scale(2.0);
+            transform: scale(2.0);
+  }
+}
+
+.anim-img {
+  -webkit-animation: spin 6s infinite linear;
+          animation: spin 6s infinite linear;
+}
+
+.logo-picture {
+  -webkit-animation-name: scale;
+          animation-name: scale;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: steps(3);
+          animation-timing-function: steps(3);
+}

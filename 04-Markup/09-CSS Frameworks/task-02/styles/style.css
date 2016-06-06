@@ -1,0 +1,135 @@
+.wrapper {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header,
+.footer {
+  background-color: #c26464;
+}
+
+.logo {
+  width: 130px;
+  height: 45px;
+}
+.logo img {
+  width: 100%;
+}
+.logo__wrapper {
+  padding: 20px 0;
+}
+
+.navbar__item {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav>li>a:hover {
+  background-color: #c26464;
+  color: #fff;
+}
+
+.navigation {
+  background-color: #3d3d3d;
+}
+
+.block-name {
+  color: #f76379;
+  border-bottom: 1px solid #f76379;
+  text-transform: uppercase;
+  padding-top: 2.5em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+.dashboard-block {
+  font-family: 'Roboto', sans-serif;
+}
+
+.olive {
+  background-color: #b8b739;
+}
+
+.red {
+  background-color: #f94d4d;
+}
+
+.green {
+  background-color: #119c7d;
+}
+
+.blue {
+  background-color: #243a83;
+}
+
+.icon-wrapper {
+  color: #fff;
+  width: 4em;
+  height: 4em;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  line-height: 5em;
+  text-align: center;
+}
+
+.progress {
+  height: 10px;
+  margin-top: 1em;
+}
+
+.panel-text {
+  color: #fff;
+  text-align: center;
+}
+
+.list-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+.panel-body {
+  margin: 1em;
+  list-style-type: none;
+}
+
+.glyphicon-align-left,
+.fa-info-circle,
+.glyphicon-comment,
+.glyphicon-edit {
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+}
+
+.glyphicon-align-left {
+  color: #51684c;
+}
+
+.fa-info-circle {
+  color: #a84444;
+}
+.glyphicon-comment {
+  color: #886d42;
+}
+.glyphicon-edit {
+  color: #a54546;
+}
+
+.navbar-btn {
+  width: 100%;
+}
+
+.panel-heading-name {
+  display: inline-block;
+  padding: .5em 0;
+}
+
+.form-text {
+  padding: .5em 0;
+}
+
+.footer {
+  color: #fff;
+  padding: 2em 0;
+}

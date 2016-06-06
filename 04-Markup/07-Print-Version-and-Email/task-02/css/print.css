@@ -1,0 +1,44 @@
+@media only print {
+  .navigation,
+  .tweet__items__item_pic,
+  .news img,
+  .aside,
+  .pagination,
+  .footer {
+    display: none;
+  }
+
+  img {
+    max-width: 100%
+  }
+
+  .breadcrumbs__wrapper a {
+    text-decoration: underline;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .qr-code {
+    display: block;
+  }
+
+  .wrapper:after{
+    content: "\00A9 2016 Kharkov Kateryna Kashchenko - All rights reserved.";
+    color: #333;
+  }
+
+  @page {
+  margin: 2cm;
+}
+  .wrapper  {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+
+

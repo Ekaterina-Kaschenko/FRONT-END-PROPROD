@@ -1,0 +1,407 @@
+.wrapper {
+  min-width: 468px
+}
+
+.page_centered {
+  width: 970px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  background: url("../img/bg.png") no-repeat center top;
+  background-size: cover;
+  min-height: 55em;
+}
+
+.logo {
+  display: block;
+  padding: 5.6em 0;
+}
+
+.header__name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  color: #fff;
+  font-weight: 300;
+}
+
+.header__descr {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 1.6em;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 1em;
+  margin-bottom: 70px;
+}
+
+.header_form {
+  width: 40%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 4px;
+}
+
+.form_name {
+  font-size: 1.4em;
+  margin-bottom: 30px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #9a9b9b;
+  padding: 1em 0;
+  margin-bottom: 1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form_button {
+  width: 16em;
+  height: 2.5em;
+  background-color: #9c27b0;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  margin-top: .6em;
+}
+
+label {
+  display: block;
+  text-align: left;
+  color: #b3b3b4;
+}
+
+.benefit_block {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 4.3em 0 2.5em 0;
+  text-align: left;
+}
+
+.awasome {
+  width: 55%;
+  margin-right: 3.5em;
+}
+
+.block__header-name {
+  font-size: 2.2em;
+  padding-bottom: 1em;
+}
+
+.block__descr {
+  font-size: .85em;
+  line-height: 1.5;
+}
+
+.benefit_item {
+  width: 30%;
+}
+
+.benefit_item-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+  padding-top: 1.5em;
+}
+
+.benefit_item:not(:last-child) {
+  margin-right: 1em;
+}
+
+.benefit_block .block__descr {
+  padding-bottom: 1.5em;
+}
+
+.benefit_item-image {
+  width: 100%;
+}
+
+.feature {
+  background-color: #fafafa;
+  padding: 3em 0 1em 0;
+}
+
+.feature__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature__items__item {
+  font-size: 1em;
+  margin-bottom: 2.5em;
+}
+
+.block-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2em;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: .8em;
+}
+
+.feature .block__descr {
+  margin-bottom: 4em;
+}
+
+.feature__items__item {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+.feature__items__item::before {
+  /*background: url("../img/badge.png") no-repeat;*/
+  position: absolute;
+  top: 0;
+  left: -3.5em;
+  content: url("../img/badge.png");
+}
+
+.feature__items__item-descr {
+  font-size: .85em;
+  line-height: 1.5;
+  text-align: left;
+  padding-bottom: 1em;
+  padding-top: 2em;
+}
+
+.block__descr {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+ul {
+  margin-right: 0;
+}
+
+.feature__items__item .benefit_item-name {
+  padding-top: .5em;
+}
+
+.gallegy_block,
+.question_block_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.gallegy_block_left,
+.gallegy_block_right {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.question_block_wrapper {
+  margin-top: 3em;
+}
+
+.question_block {
+  background-color: #fafafa;
+  padding: 4.3em;
+}
+
+.question__item-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+  padding-top: 1.5em;
+}
+
+.question__item-descr {
+  font-family: 'Roboto', sans-serif;
+  font-size: .85em;
+  line-height: 1.5;
+  text-align: left;
+  padding-bottom: 1em;
+  padding-top: 2em;
+}
+
+.question_block_left,
+.question_block_right {
+  width: 50%;
+}
+
+.question_block_left {
+  padding-right: 5%;
+}
+
+.footer {
+  padding: 3.4em 0;
+  text-align: center;
+}
+
+.gallery-item-pic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.footer_descr {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.gallery-item {
+  width: 50%;
+}
+
+.gallery-item-pic,
+.feature_pic_item {
+  -o-object-fit: cover;
+}
+
+.feature_pic,
+.feature_descr {
+  width: 42%;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 468px) {
+  .gallegy_block_left,
+  .gallegy_block_right {
+    width: 100%;
+  }
+
+  .page_centered {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .logo {
+    padding: 3em 0;
+  }
+
+  .benefit_block {
+    margin: 3% 0;
+  }
+
+  .feature_pic,
+  .feature_descr {
+    width: 42%;
+  }
+
+  .feature_pic_item {
+    width: 100%;
+  }
+
+  .feature__items__item::before {
+    left: -2.2em;
+  }
+
+  ul {
+    margin-right: 7%;
+  }
+
+  .block__descr {
+    font-size: .7em;
+  }
+
+  .feature__items__item {
+    margin-bottom: 0.5em;
+  }
+
+  .feature__items__item .benefit_item-name {
+    padding-top: 0;
+  }
+
+  .feature__items__item-descr {
+    padding-top: 1em;
+  }
+
+  .gallery-item {
+    width: 50%;
+  }
+
+  .gallery-item-pic {
+    width: 100%;
+  }
+
+  .gallegy_block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .header__descr {
+    font-weight: 400;
+    line-height: 1.9;
+    font-size: 0.75em;
+  }
+
+  .header_form {
+    width: 60%;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 468px) {
+  .awasome,
+  .benefit_block,
+  .benefit_item,
+  .feature_descr,
+  .feature__items,
+  .question_block_wrapper {
+    display: block;
+    width: 100%;
+  }
+
+  .block__header-name {
+    padding: .4em 0;
+  }
+
+  .benefit_item-image {
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  .block__descr {
+    font-size: .8em;
+  }
+
+  .benefit_item-name {
+    padding: 1.5em 0;
+    font-weight: 400;
+  }
+
+  .feature_pic {
+    width: 100%;
+  }
+
+  .feature_descr {
+    padding-left: 11%;
+    padding-top: 5%;
+  }
+
+  .feature__items__item::before {
+    left: -3em;
+  }
+
+  .question_block_wrapper {
+    margin-top: 1em;
+  }
+
+  .question_block_left, .question_block_right {
+    width: 100%;
+  }
+
+  .block-name {
+    font-size: 1.6em;
+    font-weight: 400;
+  }
+
+  .footer {
+    padding: 2em 0;
+  }
+}

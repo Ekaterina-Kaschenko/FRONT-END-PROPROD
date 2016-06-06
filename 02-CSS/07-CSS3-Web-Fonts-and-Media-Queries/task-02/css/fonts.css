@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'MuseoSans';
+  src: url('../fonts/MuseoSans/Regular/museosans.eot');
+  src: url('../fonts/MuseoSans/Regular/museosans.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MuseoSans/Regular/museosans.woff') format('woff'),
+       url('../fonts/MuseoSans/Regular/museosans.ttf') format('truetype'),
+       url('../fonts/MuseoSans/Regular/museosans.svg#museo_sans_cyrl300') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/Regular/Avenir-Regular.eot');
+  src: url('../fonts/Avenir/Regular/Avenir-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Avenir/Regular/Avenir-Regular.woff') format('woff'),
+       url('../fonts/Avenir/Regular/Avenir-Regular.ttf') format('truetype'),
+       url('../fonts/Avenir/Regular/Avenir-Regular.svg#museo_sans_cyrl300') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'PTSans';
+  src: url('../vendor/bootstrap-3.3.6-dist/fonts/glyphicons-halflings-regular.eot');
+  src: url('../vendor/bootstrap-3.3.6-dist/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+       url('../vendor/bootstrap-3.3.6-dist/fonts/glyphicons-halflings-regular.woff') format('woff'),
+       url('../vendor/bootstrap-3.3.6-dist/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+       url('../vendor/bootstrap-3.3.6-dist/fonts/glyphicons-halflings-regular.svg#pt_sans_captionbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

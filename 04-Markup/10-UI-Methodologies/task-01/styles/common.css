@@ -1,0 +1,37 @@
+.wrapper {
+  width: 100%;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.container {
+  width: 590px;
+  margin: 0 auto;
+}
+
+.not-centered-text {
+  text-align: left;
+}
+
+.button {
+  display: block;
+  border-radius: 20px;
+  background-color: #50c3af;
+  color: #fff;
+  text-decoration: none;
+}
+
+.unavailable__button {
+  display: block;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 35px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #d2d5da;
+  text-align: center;
+  text-decoration: none;
+}

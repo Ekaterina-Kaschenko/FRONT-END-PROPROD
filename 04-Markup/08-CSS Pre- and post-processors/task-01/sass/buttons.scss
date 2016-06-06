@@ -1,0 +1,32 @@
+@import "mixins";
+@import "variables";
+
+.button {
+  border: none;
+  min-width: 300px;
+  height: 90px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 36px;
+  cursor: pointer;
+
+  &:active, &:focus {
+    outline: none;
+  }
+
+  @each $colorName, $colorList in $buttons {
+    &_#{$colorName}:not(:hover) {
+      @include vertical-gradient(nth($colorList, 1), nth($colorList, 2));
+      box-shadow: 0 -2px 1px 0 rgba(0, 0, 0, .5) inset;
+    }
+
+    &_#{$colorName}:hover {
+      background-color: nth($colorList, 3);
+    }
+
+    &_#{$colorName}:active {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5) inset;
+    }
+  }
+}
+

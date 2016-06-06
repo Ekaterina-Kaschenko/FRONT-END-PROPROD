@@ -1,0 +1,58 @@
+.social {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.social li {
+  list-style: none outside;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.social li a {
+  display: block;
+  width: 33px;
+  height: 33px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-image: url(../img/icons.png);
+}
+
+.social .facebook a {
+  background-position: center top;
+}
+
+.social .facebook a:hover {
+  background-position: center bottom;
+}
+
+.social .twitter a {
+  background-position: right top;
+}
+
+.social .twitter a:hover {
+  background-position: right bottom;
+}
+
+.social .google a:hover {
+  background-position: left bottom;
+}
+
+.social .google a {
+  background-position: left top;
+}
+
+.footer {
+  padding-top: 50px;
+}
+
+.footer .social li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.footer .social li a {
+  font-size: 1.25em;
+  color: #999;
+}

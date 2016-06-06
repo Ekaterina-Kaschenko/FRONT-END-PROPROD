@@ -1,0 +1,51 @@
+.section__sprite {
+  margin: 0 auto;
+  height: 3.5em;
+}
+
+.section__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.section__item:not(:last-child) {
+  margin-right: 2em;
+}
+
+.section__header {
+  text-transform: uppercase;
+  padding: 25px 0;
+  border-bottom: 1px solid #e2e3e4;
+  color: #40474e;
+}
+
+.section__desctiption {
+  color: #787b80;
+  padding-top: 25px;
+  line-height: 1.5;
+}
+
+.section__button {
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 35px;
+}
+
+.section__link {
+  color: #50c3af;
+  display: block;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.section__header-sprite {
+  display: inline-block;
+  margin-right: .5em;
+}
+
+.section__image {
+  width: 100%;
+  margin-top: 2em;
+}

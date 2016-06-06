@@ -1,0 +1,303 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Lig.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+.page_centered {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+body{
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-block {
+  background: url("../images/mainImg.png") top center no-repeat;
+  background-size: cover;
+}
+
+.header,
+.navigation__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  padding-top: 2em;
+  padding-bottom: 15em;
+}
+
+.logo {
+  display: block;
+}
+
+.navigation {
+  line-height: 2em;
+  padding-top: 1em;
+  font-size: 1em;
+}
+
+.navigation__items-item {
+  padding-left: 1em;
+}
+
+.main-block__names {
+  text-align: center;
+  padding-bottom: 15em;
+}
+
+h1, h2 {
+  font-family: "Times New Roman", Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.block-header-name{
+  font-style: italic;
+  font-size: 2em;
+}
+
+.block-header-subname{
+  font-size: 7em;
+  padding: .3em 0
+}
+
+.started-button,
+.block-subheader,
+.block-header-subname,
+.navigation__items-item-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.started-button {
+  font-family: "Lato", Arial, sans-serif;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 1.2em;
+}
+
+.block-subheader {
+  font-family: "Lato", Arial, sans-serif;
+  padding: 2.4em 0;
+}
+
+.editors .block-header-name,
+.map-block .block-header-name {
+  color: #000;
+  font-weight: 700;
+}
+
+.editors {
+  padding: 3.5em 0;
+  text-align: center;
+}
+
+.block-descr {
+  font-family: "Lato", Arial, sans-serif;
+  color: #000;
+  font-size: 1.3em;
+  font-weight: 600;
+  text-align: center;
+  padding: .8em;
+}
+
+.editors__people-person {
+  text-align: center;
+  line-height: 1.4em;
+}
+
+.given-name {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 1em 0;
+  display: block;
+}
+
+.editors__people {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+
+.editors__people-all {
+  padding: 1.2em;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 3em;
+  text-transform: uppercase;
+}
+
+.events {
+  background: url("../images/event.jpg") top center no-repeat;
+  background-size: cover;
+  padding: 8em 0;
+  margin-top: 1.5em;
+}
+
+.event-block {
+  position: absolute;
+  top: -3em;
+  right: -3em;
+  color: #fff;
+  text-transform: uppercase;
+  width: 5.6em;
+  height: 5.6em;
+  background-color: #45b5f5;
+  border-radius: 50%;
+  line-height: 5.6em;
+  text-align: center;
+}
+
+.events__descr {
+  padding: 1em;
+  background-color: #fff;
+  width: 50%;
+  position: relative;
+}
+
+.event__descr-wrapper {
+  line-height: 1.5em;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.events .block-header-name {
+  color: #000;
+  text-align: left;
+  font-weight: 700;
+  padding-bottom: 1.2em;
+}
+
+.reason {
+  display: block;
+}
+
+.map-block {
+  padding-top: 4em;
+  padding-bottom: 3.5em;
+}
+
+.map_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  margin-top: 3em;
+}
+
+.map-block .block-header-name {
+  font-size: 2.5em;
+  padding: 0.2em;
+}
+
+.map_wrapper span {
+  display: block;
+}
+
+.map {
+  width: 23em;
+  height: 21em;
+}
+
+.footer {
+  padding: 2em;
+  text-align: center;
+  border-top: 1px solid #d1d1d1;
+}
+
+@media only screen and (max-width: 750px) {
+  .page_centered {
+    max-width: 100%;
+    padding: 2em;
+  }
+
+  .wrapper {
+    font-size: 10px;
+  }
+
+  .event__descr-wrapper {
+    font-size: 1.8em;
+  }
+
+  .editors__people {
+    display: block;
+  }
+
+  .block-header-name {
+    font-size: 5em;
+  }
+
+  .editors__people-person {
+    padding: 2em;
+  }
+
+  .block-descr {
+    font-size: 1.8em;
+  }
+
+  .editors {
+    padding: 5em 0;
+  }
+
+  .events .block-header-name {
+    font-size: 3em;
+  }
+
+  .events__descr {
+    padding: 2em;
+    width: 100%;
+  }
+
+  .event-block {
+    right: 0em;
+  }
+
+  .map_wrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .map_wrapper-map {
+    margin: 3em;
+  }
+
+  .footer {
+    margin: 0 3em;
+  }
+
+  .map {
+    width: 19em;
+  }
+}
+

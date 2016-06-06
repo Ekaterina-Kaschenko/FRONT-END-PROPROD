@@ -1,0 +1,32 @@
+.button {
+  height: 40px;
+  transition: width .5s ease,
+              border-radius .5s ease,
+              border-color .5s ease,
+              box-shadow .5s ease;
+}
+
+.button:hover {
+  width: 190px;
+  border-radius: 20px;
+  border-color: transparent;
+  -webkit-box-shadow:  0px 1px 7px 5px rgba(70, 55, 60, .8);
+  -moz-box-shadow: 0px 1px 7px 5px rgba(70, 55, 60, .8);
+  box-shadow: 0px 1px 7px 5px rgba(70, 55, 60, .8);
+}
+
+.btn-green:hover {
+  background-color: #5cb85c;
+}
+
+.btn-red:hover {
+  background-color: #d9534f;
+}
+
+.btn-yellow:hover {
+  background-color: #f0ad4e;
+}
+
+.btn-blue:hover {
+  background-color: #5bc0de;
+}

@@ -1,0 +1,27 @@
+a {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto 20px;
+  padding-left: 30px;
+  font-size: 17px;
+}
+
+a[href^="http://"] {
+  background-image: url(../images/world96.png);
+}
+
+a[href^="mailto:"] {
+  background-image: url(../images/black402.png);
+}
+
+a[href$=".pdf"] {
+  background-image: url(../images/pdf.png);
+}
+
+a[href*="djavupixels.com"] {
+  background-image: url(../images/djvu.png);
+}
+
+a[href$=".zip"] {
+  background-image: url(../images/zip.png);
+}

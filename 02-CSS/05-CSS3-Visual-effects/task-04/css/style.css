@@ -1,0 +1,38 @@
+.container {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.element {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #000;
+}
+
+.round-corners {
+  border-radius: 20px;
+}
+
+.right-round-corners {
+  border-radius: 0 20px 20px 0;
+}
+
+.left-round-corners {
+  border-radius: 20px 0 0 20px;
+}
+
+.bottom-round-corners {
+  border-radius: 0 0 20px 20px;
+}
+
+.top-round-corners {
+  border-radius: 20px 20px 0 0;
+}
+
+.border-image-style {
+  border-style: solid;
+  border-width: 27px;
+  -o-border-image: url(../images/border.png) 27 round;
+     border-image: url(../images/border.png) 27 round;
+  box-sizing: border-box;
+}

@@ -1,0 +1,80 @@
+@import "mixins";
+@import "variables";
+
+.pagination {
+  width: 400px;
+  font-size: 0;
+
+  &_showcase {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &:not(:last-child) {
+    margin-right: 100px;
+  }
+
+  @each $colorName, $colorList in $pagination {
+    &_#{$colorName} .pagination__button:not(.pagination__button_service_disabled) {
+      &.pagination__button_active {
+        color: #fff;
+      }
+      &:hover {
+        background: #e7eaeb;
+        box-shadow: 0;
+      }
+      &.pagination__button_active {
+        @include vertical-gradient(nth($colorList, 1), nth($colorList, 2));
+        box-shadow: 0 -2px 1px 0 rgba(0, 0, 0, .5) inset;
+      }
+    }
+  }
+
+  &__button {
+    @include vertical-gradient(#f3f6f7, #daddde);
+
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    color: #454c4d;
+    border: 1px solid #d6d8d7;
+    border-radius: 5px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &_service {
+      &_disabled {
+        background: #cacfd2;
+        cursor: default;
+      }
+
+      &_prev, &_next {
+        &::after {
+          margin-top: 3px;
+          margin-left: -6px;
+          position: absolute;
+        }
+      }
+
+      &_prev {
+        &::after {
+          content: url(../prev.png);
+        }
+      }
+
+      &_next {
+        &::after {
+          content: url(../next.png);
+        }
+      }
+    }
+  }
+}

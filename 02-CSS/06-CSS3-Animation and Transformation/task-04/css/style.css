@@ -1,0 +1,50 @@
+.card-container {
+  height: 174px;
+  perspective: 600px;
+  position: relative;
+  width: 238px;
+
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+
+  backface-visibility: hidden;
+  -webkit-transition: .6s;
+  -webkit-transform-style: preserve-3d;
+}
+.card .back {
+  background: #393F45;
+  color: #fff;
+  line-height: 150px;
+  text-align: center;
+  font-size:15px;
+}
+/*Your code*/
+.card .side:not(.back) {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card:hover .side:not(.back) {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+}
+
+.card:hover .back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}

@@ -1,0 +1,136 @@
+body {
+  background-color: #f2f8fc;
+}
+
+.tasks {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.tasks-header, 
+.tasks-list {
+  border: 1px solid #d1d1d1;
+}
+
+.tasks-list {
+  border-radius: 0 0 3px 3px;
+}
+
+.tasks-header {
+  background: #f4f6fb;
+  background: -webkit-linear-gradient(top, #f4f6fb 0%, #e6eaed 100%);
+  background: linear-gradient(to bottom, #f4f6fb 0%, #e6eaed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f6fb', endColorstr='#e6eaed',GradientType=0 );
+  border-radius: 3px 3px 0 0;
+  padding: 15px;
+}
+
+.tasks-title {
+  float: left;
+  font: bold 36px Arial;
+  color: #5d6b6c;
+}
+
+.tasks-lists::before,
+.tasks-lists::after {
+  content: "";
+  width: 19px;
+  height: 3px;
+  left: 0;
+  top: 0;
+  background-color: #8c959d;
+  display: block;
+}
+
+.tasks-lists {
+  float: right;
+  margin-top: 13px;
+  width: 19px;
+  height: 15px;
+  border-bottom: 3px solid #8c959d;
+  color: transparent;
+  font-size: 0;
+}
+
+.tasks-lists::after {
+  margin-top: 3px;
+}
+
+.tasks-list-item {
+  display: block;
+  background-color: #fff;
+  padding: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.tasks-list-item:not(:last-child) {
+  border-bottom: 1px solid #f0f2f3;
+}
+
+.tasks-list-mark {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #d1d1d1;
+}
+
+.tasks-list-cb {
+  display: none;
+}
+
+.tasks-list-cb:checked + .tasks-list-mark {
+  position: relative;
+  border-color: #39ca74;
+}
+
+.tasks-list-desc {
+  padding-left: 15px;
+  color: #8aa0ba;
+  font-family: Arial, sans-serif;
+  -webkit-user-select: all;
+     -moz-user-select: all;
+      -ms-user-select: all;
+          user-select: all;
+}
+
+.tasks-list-mark, .tasks-list-desc {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 700;
+}    
+
+.tasks-list-cb:checked + .tasks-list-mark::after {
+  position: absolute;
+  content: "✔";
+  color: #39ca74;
+  font-weight: 700;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.tasks-list-cb:checked ~ .tasks-list-desc {
+  text-decoration: line-through;
+  color: #39ca74;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}

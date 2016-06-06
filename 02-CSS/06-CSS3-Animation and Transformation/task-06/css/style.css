@@ -1,0 +1,243 @@
+.move-boat::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 120px;
+  background: url(../images/steam.png) no-repeat;
+  background-size: 120px;
+  position: absolute;
+  top: -50%;
+  left: -5%;
+  opacity: 0;
+}
+
+.move-boat{
+  position: absolute;
+  bottom: 10px;
+  -webkit-transition: left 2s linear;
+  transition: left 2s linear;
+  left: 0;
+}
+
+.wave{
+  position: absolute;
+  bottom: 0;
+  width: 1600px;
+  height: 150px;
+  left: -50%;
+}
+
+.sun {
+  position: absolute;
+  right: 0;
+}
+
+.cloud{
+  position: absolute;
+  right: -150px;
+  z-index: 1;
+}
+
+/* Write your code */
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes waving {
+  0%, 100% {
+    left: -50%;
+  }
+  50% {
+    left: -75%;
+  }
+}
+
+@keyframes waving {
+  0%, 100% {
+    left: -50%;
+  }
+  50% {
+    left: -75%;
+  }
+}
+
+@-webkit-keyframes moving {
+  0%, 100% {
+    right: -150px;
+  }
+  50% {
+    right: -60px;
+  }
+}
+
+@keyframes moving {
+  0%, 100% {
+    right: -150px;
+  }
+  50% {
+    right: -60px;
+  }
+}
+
+@-webkit-keyframes moving_boat {
+  0%, 100% {
+    left: 0;
+  }
+  0% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  50% {
+    left: 50%;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50.1% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  70% {
+    -webkit-transform: rotate(-25deg) rotateY(180deg);
+            transform: rotate(-25deg) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg) rotateY(180deg);
+            transform: rotate(10deg) rotateY(180deg);
+  }
+}
+
+@keyframes moving_boat {
+  0%, 100% {
+    left: 0;
+  }
+  0% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  50% {
+    left: 50%;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50.1% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  70% {
+    -webkit-transform: rotate(-25deg) rotateY(180deg);
+            transform: rotate(-25deg) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg) rotateY(180deg);
+            transform: rotate(10deg) rotateY(180deg);
+  }
+}
+
+
+@-webkit-keyframes elem_opacity {
+  0, 100% {
+    opacity: 0;
+  }
+  50% {
+   opacity: 1;
+  }
+}
+
+@keyframes elem_opacity {
+  0, 100% {
+    opacity: 0;
+  }
+  50% {
+   opacity: 1;
+  }
+}
+
+@-webkit-keyframes background_animation {
+  0, 100% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #262f37;
+  }
+}
+
+@keyframes background_animation {
+  0, 100% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #262f37;
+  }
+}
+
+.animation-box {
+  -webkit-animation: background_animation 3s infinite linear;
+          animation: background_animation 3s infinite linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.sun {
+  -webkit-animation: spin 6s infinite linear;
+          animation: spin 6s infinite linear;
+}
+
+.cloud {
+  -webkit-animation: moving 2s infinite linear;
+          animation: moving 2s infinite linear;
+}
+
+.wave {
+  -webkit-animation: waving 2s infinite linear;
+          animation: waving 2s infinite linear;
+}
+
+.move-boat {
+  -webkit-animation: moving_boat 2s infinite linear;
+          animation: moving_boat 2s infinite linear;
+}
+
+.move-boat::after {
+  -webkit-animation: elem_opacity 2s infinite linear;
+          animation: elem_opacity 2s infinite linear;
+}
+
+.animation-box,
+.panel-primary,
+.sun,
+.cloud,
+.wave,
+.move-boat,
+.move-boat::after {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.animation-box:hover,
+.animation-box:hover .panel-primary,
+.animation-box:hover .sun,
+.animation-box:hover .cloud,
+.animation-box:hover .wave,
+.animation-box:hover .move-boat,
+.animation-box:hover .move-boat::after {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}

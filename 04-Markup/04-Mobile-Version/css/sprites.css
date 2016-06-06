@@ -1,0 +1,24 @@
+.sprite {
+  background-image: url(../img/sprites.png);
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+
+.basket-icon {
+  width: 98px;
+  height: 89px;
+  background-position: -5px -5px;
+}
+
+.pencil-icon {
+  width: 77px;
+  height: 108px;
+  background-position: -113px -5px;
+}
+
+.tv-icon {
+  width: 95px;
+  height: 81px;
+  background-position: -5px -123px;
+}

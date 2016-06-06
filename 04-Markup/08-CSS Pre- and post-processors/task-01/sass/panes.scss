@@ -1,0 +1,66 @@
+@import "mixins";
+@import "variables";
+
+.pane {
+  display: inline-flex;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+
+  @each $colorName, $colorList in $panes {
+    &_#{$colorName} {
+      &.pane_underlined .pane__input:checked + .pane__title {
+        border-bottom: 4px solid nth($colorList, 1);
+        color: #000;
+      }
+
+      &.pane_filled .pane__input:checked + .pane__title {
+        background: nth($colorList, 1);
+        color: #fff;
+      }
+    }
+  }
+
+  &_showcase:not(:last-child) {
+    margin-right: 200px;
+  }
+
+  &_underlined {
+    .pane__item {
+      color: #bdc3c7;
+      border-bottom: 2px solid #bdc3c7;
+    }
+
+    .pane__title {
+      padding: 30px;
+      margin-bottom: -2px;
+    }
+  }
+
+  &_filled {
+    border: 1px solid #dee1e2;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+    color: #7f8c8d;
+
+    .pane__item:not(:last-child) {
+      border-right: 1px solid #dee1e2;
+    }
+
+    .pane__title {
+      padding: 20px 30px;
+    }
+  }
+
+  &__title {
+    display: block;
+    user-select: none;
+  }
+
+  &__item {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+  }
+}

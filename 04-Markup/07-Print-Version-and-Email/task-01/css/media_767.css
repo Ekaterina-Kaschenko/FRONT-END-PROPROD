@@ -1,0 +1,10 @@
+@media only screen and (max-width: 767px) {
+  .main-nav {
+    background-color: #712B2B; }
+
+  .main-nav nav ul li.active a {
+    color: rgba(255, 216, 20, 0.66); }
+
+  div.footer {
+    text-align: center }
+}

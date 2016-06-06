@@ -1,0 +1,12 @@
+.multiple-images {
+	background: url(../images/top.jpg), url(../images/bottom.png);
+	background-repeat: repeat-x, repeat-y;
+	height: 100vh;
+}
+
+.resize-image {
+	background: url(../images/image.png) no-repeat left top;
+	background-size: 200px 400px;
+	height: 400px;
+	width:200px;
+}

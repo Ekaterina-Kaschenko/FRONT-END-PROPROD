@@ -1,0 +1,286 @@
+.wrapper {
+	width: 100%;
+	font-family: 'Open Sans';
+}
+
+.page_centered {
+	max-width: 1100px;
+	margin: 0 auto;
+	min-width: 750px;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.header {
+	background: url(../img/header_bg.png) no-repeat center top;
+	background-size: cover;
+	width: 100%;
+	min-height: 980px;
+	padding-top: 30px;
+}
+
+.menu__items li {
+	display: inline-block;
+	line-height: 45px;
+}
+
+.menu__items__item {
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+	font-family: 'Open Sans';
+}
+
+.menu__items__wrapper li:not(:last-child) {
+	margin-right: 50px;
+}
+
+.menu__items__item:hover {
+	border-bottom: 2px solid #fff;
+  padding-bottom: 35px;
+}
+
+.menu__items__wrapper {
+	float: left;
+}
+
+input[type="text"] {
+	border-radius: 25px;
+	float: right;
+	width: 190px;
+	height: 45px;
+	color: #626262;
+	background: url(../img/search.png) no-repeat right center;
+  background-size: 9%;
+  background-position: 190px;
+  padding-left: 27px;
+  margin-left: 40px;
+  background-color: #fff;
+  border: none;
+}
+
+.logo {
+	float: left;
+	margin-top: 20px;
+}
+
+.menu__items {
+	float: right;
+  margin-right: -5%;
+}
+
+.header__wrapper {
+	width: 530px;
+  padding-top: 34%;
+  margin-left: -5%;
+}
+
+.header__wrapper__name {
+	font-family: 'Open Sans';
+	font-size: 50px;
+	color: #fff;
+	font-weight: 300;
+	text-align: right;
+	line-height: 1.3;
+	letter-spacing: 1px;
+}
+
+.button_block__wrapper {
+	position: relative;
+}
+
+.button_header {
+	display: block;
+	width: 300px;
+	height: 60px;
+	color: #fff;
+	background-color: #8824cd;
+	text-align: center;
+	line-height: 60px;
+	font-family: 'Open Sans';
+	border-radius: 40px;
+  position: absolute;
+  right: 0;
+  margin-top: 70px;
+}
+
+.button_subheader {
+  text-align: right;
+  padding-right: 30px;
+  color: #fff;
+  padding-top: 150px;
+  font-size: 12px;
+}
+
+.block_descr {
+	background-color: #2e3b4e;
+/* 	padding-bottom: 150px; */
+}
+
+.block_descr__wrapper {
+	position: relative;
+  padding-bottom: 8.5%;
+}
+
+.block_descr__wrapper__items {
+	padding-top: 7.5%;
+	color: #fff;
+  margin-left: 7%;
+
+}
+
+.block_descr__wrapper__items__item {
+	float: left;
+  text-align: justify;
+  width: 47%;
+  padding: 0 3%;
+}
+
+.block_subheader {
+	font-weight: 700;
+  margin-bottom: 50px;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.block_subheader__description {
+	line-height: 1.3;
+}
+/*
+.block_descr__wrapper::after {
+  position: absolute;
+  top: 92.5%;
+  left: 50%;
+  width: 141px;
+  height: 72px;
+  margin-left: -70.5px;
+  background: url(./img/block_1.png) center no-repeat;
+} */
+
+.block_img {
+  position: absolute;
+  bottom: -6%;
+  left: 46.5%;
+}
+
+.block3 {
+	background-color: #e7526b;
+	height: 592px;
+
+}
+
+.block3_header {
+	padding-top: 16%;
+	text-align: center;
+	font-family: 'Open Sans';
+	font-size: 35px;
+	color: #fff;
+	font-weight: 300;
+}
+
+.block3_descr {
+	width: 480px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  font-weight: normal;
+  line-height: 1.7;
+  padding: 20px 0;
+}
+
+.button_block3 {
+	display: block;
+	margin: 0 auto;
+	width: 350px;
+	height: 60px;
+	color: #e7526b;
+	font-weight: 700;
+	background-color: #fff;
+	text-align: center;
+	line-height: 60px;
+	font-family: 'Open Sans';
+	border-radius: 40px;
+}
+
+.block_4 {
+	background: url(../img/block_pen_bg.png) no-repeat left top;
+	min-height: 545px;
+	background-size: contain;
+}
+
+.black {
+	color: #000;
+}
+
+.block4_subheader_small {
+
+}
+
+.block_4__wrapper {
+	width: 60%;
+  margin-left: 40%;
+  padding-top: 9%;
+}
+
+.block_4__header {
+	margin-bottom: 50px;
+  font-family: 'Open Sans';
+  font-size: 19px;
+  line-height: 1.4;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.block_4__descr {
+  font-family: "Open Sans";
+  line-height: 1.7;
+  font-size: 1.2em;
+  padding-bottom: 5%;
+}
+
+.block4_subheader_small {
+  font-family: "Open Sans";
+  line-height: 1.7;
+  font-size: 1em;
+}
+
+.footer {
+  background-color: #e7526b;
+  padding-top: 5%;
+  padding-bottom: 7%;
+}
+
+.footer_wrapper {
+  color: #fff;
+  width: 38%;
+  margin-left: -4%;
+}
+
+.footer .block_subheader {
+  margin-bottom: 4%;
+}
+
+.footer .block_subheader__description {
+  line-height: 1.5;
+}
+
+.block-info {
+  padding-top: 10%;
+}

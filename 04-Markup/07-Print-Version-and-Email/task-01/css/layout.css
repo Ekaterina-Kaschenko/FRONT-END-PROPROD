@@ -1,0 +1,10 @@
+body {
+	position: relative;
+  background: #fff;
+  color: #000;
+  font-family: "Playfair Display SC", serif;
+  font-size: 15px;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

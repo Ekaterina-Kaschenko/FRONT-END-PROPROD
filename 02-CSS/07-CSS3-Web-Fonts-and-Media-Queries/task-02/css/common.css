@@ -1,0 +1,38 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.3em;
+  padding-top: 30px;
+}
+
+a {
+  color: #82868f;
+  text-decoration: none;
+}
+
+.text_centered {
+  text-align: center;
+}
+
+.text_white {
+  color: #fff;
+}
+
+.text_blue {
+  color: #0ebfdd;
+}
+
+.fa-star {
+  font-size: 0.3em;
+  vertical-align: middle;
+  padding: 17px;
+}
+
+.icon_email {
+  color: #6ec5ea;
+  border: none;
+}

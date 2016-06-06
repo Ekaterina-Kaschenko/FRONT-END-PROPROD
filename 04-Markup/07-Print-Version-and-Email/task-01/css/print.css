@@ -1,0 +1,62 @@
+@media only print {
+  body {
+    font: 12pt Georgia, "Times New Roman", Times, serif;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  #skills:after{
+    content: "\00A9 2016 Afnizar Nur Ghifari - All rights reserved.";
+    color: #333;
+  }
+
+  .first-block h1::before {
+    content: '';
+  }
+
+  .quote,
+  .footer {
+    display: none;
+   }
+
+  .first-block {
+    padding: 20pt 0;
+  }
+
+  .first-block .wrap {
+    margin: 0;
+  }
+
+  .section.second {
+    margin-bottom: 0;
+  }
+
+  .section .container::after {
+    border-bottom: none;
+  }
+
+  .quote {
+    margin-top: 0;
+  }
+
+  .work-list a {
+
+  }
+
+  .qr-code {
+    display: block;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  @page {
+    margin: 2cm;
+  }
+}
+
+
+
