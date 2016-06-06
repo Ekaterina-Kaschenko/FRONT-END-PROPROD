@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id='tabs'>
+            <div id='buttons'>
+                <div class='but' id='but_1'>tab1</div>
+                <div class='but' id='but_2'>tab2</div>
+                <div class='but' id='but_3'>tab3</div>
+                <div class='but' id='but_4'>tab4</div>
+            </div>
+            <div id='blocks'>
+                <div class='tab' id='tab-1'>block1</div>
+                <div class='tab' id='tab-2'>block2</div>
+                <div class='tab' id='tab-3'>block3</div>
+                <div class='tab' id='tab-4'>block4</div>
+            </div>
+        </div>
+        <script>
+
+            var TABS = {
+                el: document.getElementById('tabs'),
+                buttons: document.querySelectorAll('.but'),
+                init: function () {
+                    for (var i = 0; i < TABS.buttons.length; i++) {
+                        TABS.buttons[i].addEventListener('click', function () {
+                            TABS.onClick(this);
+                        });
+                    }
+                    
+                    window.onpopstate = function(event) {
+                        TABS.changeTab(event.state.id);
+                    };
+                },
+                onClick: function (e) {
+                    var ident = e.id.split('_')[1];
+                    TABS.changeTab(ident);
+                    history.pushState({id: ident}, null, "?tab-" + ident );
+                },
+                hideTabs: function () {
+                    var tabs = document.querySelectorAll('#blocks .tab');
+                    for (var i = 0; i < tabs.length; i++) {
+                        tabs[i].style.display = 'none';
+                    }
+                },
+                changeTab: function (nameTab) {
+                    TABS.hideTabs();
+                    var tab = document.getElementById('tab-' + id);
+                    tab.style.display = 'block';
+                }
+		onClick: fun
+		onLoad: fun
+		onPopState
+            }
+            var ROUTER = {
+                
+            }
+            TABS.init();
+        </script>
+    </body>
+</html>

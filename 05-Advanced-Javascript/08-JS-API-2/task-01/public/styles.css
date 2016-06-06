@@ -1,0 +1,64 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.content,
+.tabs__item {
+  border: 2px solid #888;
+}
+
+.content {
+  position: relative;
+}
+
+.content-block {
+  min-height: 400px;
+  padding: 10px;
+}
+
+.tabs {
+  padding: 0 10px;
+}
+
+
+.navigation {
+  overflow:hidden;
+}
+
+.navigation > ul > li{
+  margin: 0 10px -2px 0;
+  padding: 7px 10px;
+  display: block;
+  float: left;
+  background-color: #e8e8e8;
+  border: 2px solid #888;
+
+}
+
+.navigation > ul > li:hover{
+  background-color: #fff;
+}
+
+a:active{
+  background-color: #fff;
+  z-index: 100;
+}
+
+ul.tabs li.active {
+  background-color: #fff;
+  color: #333;
+  border-bottom: 1px solid #fff;
+  display: block;
+}
+
+.button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}

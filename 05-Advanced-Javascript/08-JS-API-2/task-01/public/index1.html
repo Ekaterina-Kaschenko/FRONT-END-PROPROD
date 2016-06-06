@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS API Part 2</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <nav class="navigation">
+      <ul class="tabs">
+        <li class="tabs__item active" data-tab="default" id="tabHeader_1"><a class="tab-link-active" href="/">Default</a></li>
+        <li class="tabs__item" data-tab="geolocation" id="tabHeader_2"><a href="/geolocation">Geolocation</a></li>
+        <li class="tabs__item" data-tab="synccalculation"
+            id="tabHeader_3"><a href="/synccalculation">Sync calculation</a></li>
+        <li class="tabs__item" data-tab="webworker" id="tabHeader_4"><a href="/webworker">WebWorker</a></li>
+      </ul>
+    </nav>
+    <section class="content">
+      <div class="content-block" data-content="default" id="tabpage_1">
+        This is default tab visible to user. Also all unresolved urls should point here.
+      </div>
+      <div class="content-block" data-content="geolocation" id="tabpage_2">
+        <img src="/waiting.gif" alt="Map">
+      </div>
+      <div class="content-block" data-content="synccalculation" id="tabpage_3">
+        <p>Example of long calculations that blocks page. This is example page.</p>
+
+        <p>Click on button and try to navigate to other tabs on the page or activate fullscreen.</p>
+        <button id="syncstart">Start sync calculation</button>
+        <p>Calculations result: <span id="syncresult">N/A</span></p>
+      </div>
+      <div class="content-block" data-content="webworker" id="tabpage_4">
+        <p>This page should be updated normally</p>
+      </div>
+      <button class="button">+</button>
+    </section>
+  </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="tabs.js"></script>
+<script src="fullScreen.js"></script>
+</body>
+</html>

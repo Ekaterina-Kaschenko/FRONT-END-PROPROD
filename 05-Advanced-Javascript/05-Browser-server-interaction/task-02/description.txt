@@ -1,0 +1,34 @@
+DESCRIPTION:
+
+implement small text chat using WebSockets.
+
+
+REQUIREMENTS:
+
+- Support all major browsers: 
+	* Chrome, 
+	* Firefox, 
+	* Safari, 
+	* IE11
+
+
+
+WORKFLOW:
+
+Steps to install and start:
+
+1. go to /server/ and run $ npm install
+2. run $ node appChat.js
+3. go to project root
+4. run $ http-server -p 8888 (must be installed by $ npm i http-server -g)
+5. open localhost:8888 in several tabs
+6. check messages syncronization in tabs.
+
+   * client will connect to 'http://localhost:8008', node.js server will run on this port.
+
+
+DEADLINE:
+
+Due Date - 3 days from the moment of the presentation
+Penalty - minus 1 score for each overdue day
+
